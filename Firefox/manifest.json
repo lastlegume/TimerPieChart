@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Timer Pie Chart",
+  "version": "1.0.2",
+  "description": "Adds a pie chart to the default timer on Google",
+  "icons": {
+    "48": "icons/48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["modifyTimer.js"]
+    }
+  ]
+}
